@@ -1,0 +1,44 @@
+.angular-google-map-container {
+  height: 600px;
+}
+.header{
+    background-color: darkblue;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.highlight{
+    color: darkblue;
+}
+
+.middle td{
+    text-align: center;
+}
+
+table{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+label {
+    background-color: white;
+    color: darkblue;
+    border: 1px solid darkblue;
+    padding: 7px 14px;
+    font-size: 15px;
+}
+
+.box td{
+    padding: 0px 10px;
+}
+
+.selected label{
+    background-color: darkblue;
+    color: white;
+}
+
+.book label{
+    background-color: gold;
+    border: 0px;
+}

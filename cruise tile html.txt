@@ -1,0 +1,59 @@
+<div style="background-color:rgb(240, 255, 255)">
+    <div class="header">16 DAY SOUTH AMERICA PASSAGE</div>
+    <table>
+      <tr class="upper box">
+        <td><img src="../assets/world map.jpg" title="world" width="300" height="150" border="1"></td>
+        <td>
+          <table>
+            <tr><td>DEPARTURE DATE: </td><td class="highlight"><b>18 OCT 2018</b></td></tr>
+            <tr><td>SHIP: </td><td><b>ms zaamdaam</b></td></tr>
+            <tr><td>DEPARTS: </td><td><b>San Antonia (Santiago), Chile</b></td></tr>
+            <tr><td>ARRIVES: </td><td><b>Rio de Janerio, Brazil</b></td></tr>
+          </table>
+        </td>
+        <td>
+          <table class="middle">
+            <tr><td>From</td></tr>
+            <tr><td style="font-size: 25px" class="highlight">US$1,999</td></tr>
+            <tr><td>per person <b>Interior</b></td></tr>
+            <tr><td style="font-size: 13px" class="highlight"><u>*Plus taxes, fees and Port Expenses US$605</u></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td><label>VIEW ITINERARY</label></td></tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <table align="center" style="padding: 10px 0px">
+        <tr class="lower box">
+            <table class="middle">
+              <tr style="font-size: 13px">
+                <td>INTERIOR</td>
+                <td>OCEAN VIEW</td>
+                <td>VISTA SUITE</td>
+                <td>NEPTUNE SUITE</td>
+              </tr>
+              <tr><td></td></tr>
+              <tr><td></td></tr>
+              <tr><td></td></tr>
+              <tr class="box">
+                <td class="selected"><label>US$1,999+</label></td>
+                <td><label>US$2,099+</label></td>
+                <td><label>US$4,499+</label></td>
+                <td><label>US$6,299+</label></td>
+                <td class="book"><label>BOOK NOW</label></td>
+              </tr>
+              <tr><td></td></tr>
+              <tr><td></td></tr>
+              <tr><td></td></tr>
+              <tr><td></td></tr>
+              <tr><td></td></tr>
+              <tr><td></td></tr>
+              <tr style="text-align: center"><td colspan="5" style="font-size: 13px" class="highlight"><u>*Plus taxes, fees and Port Expenses US$605</u></td></tr>
+            </table>
+          </tr> 
+    </table>
+    <div class="highlight">*The deposit on the service is fully non refundable. Force shown here are on US$ per person, based on double occupency.</div>    
+</div>

@@ -1,0 +1,78 @@
+
+
+<!doctype html>
+<html ng-app="MyApp">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+ <title>Front End Challenge</title>
+  <link rel="stylesheet" href="style.css" />
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js"></script>
+  <script src="tileController.js"></script>
+</head>
+
+<body>
+  <div ng-app="MyApp" ng-controller="MyController">
+         <div id="dvMap" style="width: 300px; height: 170px">
+			<img src="map.jpg" title="world" width="300" height="150" border="1">
+         </div>
+	<div ng-repeat="data in markers" style="background-color:rgb(240, 255, 255)">
+    <div class="header">{{data.voyages[0].itinerary.description}}</div>
+    <table>
+      <tr class="upper box">
+        <td><img src="map.jpg" title="world" width="300" height="150" border="1"></td>
+        <td>
+          <table>
+            <tr><td>DEPARTURE DATE: </td><td class="highlight"><b>{{data.voyages[0].dateDepart |date}}</b></td></tr>
+            <tr><td>SHIP: </td><td><b>{{data.voyages[0].ship.displayName}}</b></td></tr>
+            <tr><td>DEPARTS: </td><td><b>{{data.voyages[0].disembarkPort.portName}}</b></td></tr>
+            <tr><td>ARRIVES: </td><td><b>{{data.voyages[0].embarkPort.portName}}</b></td></tr>
+          </table>
+        </td>
+        <td>
+          <table class="middle">
+            <tr><td>From</td></tr>
+            <tr><td style="font-size: 25px" class="highlight">{{data.voyages[0].currencySymbol}}{{selectedIternary.priceBlocks[0].prices[0].fare}}</td></tr>
+            <tr><td>per person <b>Interior</b></td></tr>
+            <tr><td style="font-size: 13px" class="highlight"><u>*Plus taxes, fees and Port Expenses {{data.voyages[0].currencySymbol}}{{selectedIternary.priceBlocks[0].govtFeesAndTaxes}}</u></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td></td></tr>
+            <tr><td><label>VIEW ITINERARY</label></td></tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <table align="center" style="padding: 10px 0px">
+        <tr class="lower box">
+            <table class="middle">
+              <tr style="font-size: 13px">
+                <td ng-repeat="view in data.voyages[0].stateRooms">{{view.meta}}</td>
+              </tr>
+              <tr><td></td></tr>
+              <tr><td></td></tr>
+              <tr><td></td></tr>
+              <tr class="box">
+                <td ng-repeat="view in data.voyages[0].stateRooms"  ng-class="{selected:view._id===selectedIternary._id}">
+					<button  ng-click="selectIternary(view)">{{data.voyages[0].currencySymbol}}{{view.priceBlocks[0].prices[0].fare}}*</button>
+				</td>
+                <td class="book"><label>BOOK NOW</label></td>
+              </tr>
+              <tr><td></td></tr>
+              <tr><td></td></tr>
+              <tr><td></td></tr>
+              <tr><td></td></tr>
+              <tr><td></td></tr>
+              <tr><td></td></tr>
+              <tr style="text-align: center"><td colspan="5" style="font-size: 13px" class="highlight"><u>*Plus taxes, fees and Port Expenses {{data.voyages[0].currencySymbol}}{{selectedIternary.priceBlocks[0].govtFeesAndTaxes}}</u></td></tr>
+            </table>
+          </tr> 
+    </table>
+    <div class="highlight">*The deposit on the service is fully non refundable. Force shown here are on US$ per person, based on double occupency.</div>    
+</div>
+    </div>
+</body>
+
+</html>
